@@ -10,13 +10,12 @@ var proto = Object.create(Phaser.State);
 Level2.prototype = proto;
 
 Level2.prototype.create = function() {
-	
 
-	this.Jump = this.add.sound("Jump",2,false);
-	this.Hit = this.add.sound("Hit",1.5,false);
-	this.Hit.allowMultiple=true;
-	this.point = this.add.sound("Coin",1,false);
-	this.point.allowMultiple=true;
+	this.Jump = this.add.sound("Jump", 2, false);
+	this.Hit = this.add.sound("Hit", 1.5, false);
+	this.Hit.allowMultiple = true;
+	this.point = this.add.sound("Coin", 1, false);
+	this.point.allowMultiple = true;
 	// this.game.physics.startSystem(Phaser.Physics.ARCADE);
 	this.physics.startSystem(Phaser.Physics.ARCADE);
 	this.game.physics.arcade.gravity.y = 1000;
@@ -39,7 +38,7 @@ Level2.prototype.create = function() {
 	// แสดง sprite
 	this.enemies = this.add.group();
 	this.Gpoint = this.add.group();
-	this.concat = this.add.group() ;
+	this.concat = this.add.group();
 	this.ui = this.add.group();
 	this.ui.fixedToCamera = true;
 	// /////////////////////////////////////////////
@@ -48,7 +47,7 @@ Level2.prototype.create = function() {
 	for (x in this.map.objects.object) {
 		var obj = this.map.objects.object[x];
 		if (obj.type == "player") {
-			console.log(this.player); 
+			console.log(this.player);
 			this.player = this.addPlayer(obj.x, obj.y);
 			this.game.camera.follow(this.player,
 					Phaser.Camera.FOLLOW_PLATFORMER);
@@ -79,7 +78,7 @@ Level2.prototype.create = function() {
 		} else if (obj.type == "enemy6") {
 			var Enemy6 = this.addEWeed(obj.x, obj.y);
 			this.enemies.add(Enemy6);
-		}else if (obj.type == "goal") {
+		} else if (obj.type == "goal") {
 			var goal = this.addGoal(obj.x, obj.y);
 			this.concat.add(goal);
 		}
@@ -110,7 +109,7 @@ Level2.prototype.addGoal = function(x, y) {
 	J.smoothed = false;
 	this.game.physics.arcade.enable(J);
 	this.game.physics.enable(J);
-	this.game.physics.arcade.gravity.y = 1000;     
+	this.game.physics.arcade.gravity.y = 1000;
 	J.play("idle");
 	J.body.collideWorldBounds = true;
 	return J;
@@ -190,12 +189,12 @@ Level2.prototype.update = function() {
 	this.game.physics.arcade.collide(this.enemies, this.maplayer);
 	this.game.physics.arcade.collide(this.concat, this.maplayer);
 
-	this.physics.arcade.collide(this.Gpoint, this.player, this.onCollidePlayerPoint, null,
-			this);
-	this.physics.arcade.collide(this.enemies, this.player, this.onCollidePlayerEnemy, null,
-			this);
-	this.physics.arcade.collide(this.concat, this.player, this.onCollidePlayerConcat, null,
-			this);
+	this.physics.arcade.collide(this.Gpoint, this.player,
+			this.onCollidePlayerPoint, null, this);
+	this.physics.arcade.collide(this.enemies, this.player,
+			this.onCollidePlayerEnemy, null, this);
+	this.physics.arcade.collide(this.concat, this.player,
+			this.onCollidePlayerConcat, null, this);
 
 	// //////////
 	if (this.cursor.left.isDown) {
@@ -208,7 +207,7 @@ Level2.prototype.update = function() {
 				this.player.play("jump");
 				this.Jump.play();
 			}
-			
+
 		}
 	} else if (this.cursor.right.isDown) {
 		this.player.scale.x = 1;
@@ -216,11 +215,11 @@ Level2.prototype.update = function() {
 		this.player.play("run");
 		if (this.cursor.up.isDown) {
 			if (this.player.body.velocity.y == 0) {
-				this.player.body.velocity.y = -350;		
+				this.player.body.velocity.y = -350;
 				this.player.play("jump");
 				this.Jump.play();
 			}
-			
+
 		}
 	} else if (this.cursor.up.isDown) {
 		if (this.player.body.velocity.y == 0) {
@@ -232,22 +231,22 @@ Level2.prototype.update = function() {
 		this.player.play("idle");
 		this.player.body.velocity.x = 0;
 	}
-	
-	this.enemies.forEachAlive(function(enemy){
-		if(this.math.distance(this.player.x,this.player.y,enemy.x,enemy.y)<200){
-			
-			
-			this.physics.arcade.moveToObject(enemy, this.player, enemy.speed);
-			
-			
-			if(enemy.body.velocity.y<0){
-				enemy.body.velocity.y = 0;
-			}
-			
-		
-		}
-	},this);
-	
+
+	this.enemies.forEachAlive(
+			function(enemy) {
+				if (this.math.distance(this.player.x, this.player.y, enemy.x,
+						enemy.y) < 200) {
+
+					this.physics.arcade.moveToObject(enemy, this.player,
+							enemy.speed);
+
+					if (enemy.body.velocity.y < 0) {
+						enemy.body.velocity.y = 0;
+					}
+
+				}
+			}, this);
+
 };
 
 Level2.prototype.onCollidePlayerPoint = function(player, Gpoint) {
@@ -263,12 +262,11 @@ Level2.prototype.onCollidePlayerEnemy = function(player, enemies) {
 	enemies.canHit = false;
 	this.Hit.play();
 	player.body.velocity.y = -300;
-	this.game.score = this.game.score -1;
+	this.game.score = this.game.score - 1;
 	this.scoreText.text = "คะแนน : " + this.game.score;
 };
 
-Level2.prototype.onCollidePlayerConcat = function(player, concats){
-	//this.BGmusic.stop();
-	this.game.state.start("Level",true,false,this.player);
-	};
-
+Level2.prototype.onCollidePlayerConcat = function(player, concats) {
+	// this.BGmusic.stop();
+	this.game.state.start("Level", true, false, this.player);
+};
