@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="64" height="36" tilewidth="30" tileheight="30" nextobjectid="196">
+ <tileset firstgid="1" name="street" tilewidth="30" tileheight="30" tilecount="44" columns="11">
+  <image source="C:/Users/Thitipong/Desktop/New folder/street.png" width="330" height="120"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="64" height="36">
+  <data encoding="csv">
+26,24,23,26,24,23,26,24,23,24,27,28,10,37,37,37,37,37,37,37,37,37,43,19,24,24,23,26,26,25,26,26,25,26,24,26,27,42,37,37,37,37,37,37,37,29,19,26,26,24,25,26,24,25,24,24,25,24,24,23,24,24,25,24,
+0,0,0,0,0,0,0,0,0,0,24,27,42,37,37,37,37,37,37,37,37,9,29,19,0,0,0,0,0,0,0,0,0,0,0,0,27,28,10,37,37,37,37,37,29,30,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,16,28,10,37,37,37,37,37,37,37,43,19,26,0,0,0,0,0,0,0,0,0,0,0,0,26,16,42,37,37,37,9,29,19,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,26,27,28,32,32,32,32,32,32,32,29,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,28,32,32,10,43,19,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,24,25,26,24,23,26,26,25,26,26,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,25,26,16,42,43,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,42,43,30,0,0,0,0,0,0,0,0,0,0,0,0,5,6,6,6,6,6,6,6,
+7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,42,43,19,0,0,0,0,0,0,0,0,0,0,0,5,16,17,31,31,31,31,31,31,
+31,18,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,42,43,30,0,0,0,0,1,2,4,0,0,0,5,16,27,42,37,37,37,37,37,37,
+37,20,18,7,7,7,6,7,6,6,7,6,6,7,6,7,7,7,6,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,42,43,30,2,4,0,0,0,0,0,0,0,5,27,27,16,28,32,32,32,32,32,32,
+32,32,32,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,6,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,7,6,7,42,43,19,0,0,0,0,0,0,0,0,1,26,26,26,26,23,24,24,23,24,24,16,
+27,26,26,24,25,26,26,23,26,24,23,26,26,23,24,26,23,24,26,23,26,16,19,4,0,0,0,0,0,0,0,0,0,0,0,0,5,30,17,31,31,21,43,30,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,
+27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,24,0,0,0,5,6,6,7,7,6,6,7,7,6,19,17,21,37,37,37,43,19,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,
+16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,16,11,31,31,31,31,31,31,31,31,21,37,37,37,37,43,30,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,16,
+27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,16,28,32,32,32,32,32,32,32,32,32,32,32,10,43,19,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,0,0,16,
+27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,23,26,26,25,24,26,23,26,26,25,26,16,42,43,19,0,0,0,0,0,0,0,0,0,0,0,0,5,6,7,7,6,6,8,16,
+27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,7,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,42,43,30,0,0,0,0,0,0,0,0,0,0,0,5,27,17,31,31,31,31,31,31,
+6,6,6,7,6,7,6,6,7,7,6,6,7,6,7,6,6,7,6,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,42,43,30,0,0,0,0,0,0,0,0,0,0,5,27,27,42,37,37,37,37,37,37,
+31,31,31,31,31,31,31,31,31,31,31,11,11,11,11,11,11,30,26,24,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,42,43,30,0,0,1,3,4,0,0,0,0,5,16,16,16,42,37,37,37,37,37,37,
+37,37,37,37,37,9,32,32,32,32,32,19,26,24,24,26,24,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,42,43,30,0,0,0,0,0,0,0,0,5,27,16,16,16,28,32,32,32,32,32,32,
+37,9,32,32,32,29,19,26,26,24,24,24,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,42,43,19,0,0,0,0,0,0,0,5,27,26,25,26,26,23,24,24,23,24,24,16,
+32,29,30,24,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,7,8,0,0,16,28,29,30,0,0,0,0,0,0,5,27,24,0,0,0,0,0,0,0,0,0,0,16,
+16,24,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2,2,3,2,2,2,2,2,3,2,2,16,11,19,7,7,38,39,16,19,0,0,0,0,1,2,26,24,0,0,0,0,0,0,0,0,0,0,0,16,
+16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,30,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,
+6,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,30,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,
+18,19,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,30,19,0,0,2,0,0,0,0,0,0,0,0,5,6,7,7,6,6,8,16,
+20,18,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,2,2,2,3,2,6,22,19,0,0,0,0,3,0,0,0,0,0,5,27,17,31,31,31,31,31,31,
+32,29,7,7,7,6,7,6,7,6,8,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,22,19,0,0,0,0,0,0,0,0,0,5,16,27,42,37,37,37,37,37,37,
+24,24,23,24,26,25,24,26,25,24,24,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,4,0,0,0,0,0,0,0,0,0,27,22,30,0,0,0,0,0,0,0,5,6,16,27,16,42,37,37,37,37,37,37,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,22,19,0,0,0,0,0,0,5,16,16,27,16,16,28,32,32,32,32,32,32,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,16,27,30,0,0,0,0,0,1,25,24,26,25,26,24,25,24,24,25,24,24,27,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,24,16,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,6,27,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,24,24,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,16,17,18,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,27,17,21,43,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,16,17,21,37,43,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,8,0,0,0,0,0,5,6,6,6,6,6,6,6,
+12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13,12,13
+</data>
+ </layer>
+ <objectgroup name="object">
+  <object id="1" name="enemy" type="enemy" gid="15" x="993" y="1027.04" width="30" height="30"/>
+  <object id="2" name="enemy" type="enemy" gid="15" x="1469" y="1011.04" width="30" height="30"/>
+  <object id="3" name="point" type="point" gid="34" x="1766.46" y="659.502" width="30" height="30"/>
+  <object id="4" name="point" type="point" gid="34" x="837.795" y="1052.83" width="30" height="30"/>
+  <object id="5" name="point" type="point" gid="34" x="1107.92" y="270.626" width="30" height="30"/>
+  <object id="6" name="point" type="point" gid="34" x="1076.54" y="570.251" width="30" height="30"/>
+  <object id="7" name="point" type="point" gid="34" x="1857.46" y="661.502" width="30" height="30"/>
+  <object id="8" name="point" type="point" gid="34" x="207.37" y="691.086" width="30" height="30"/>
+  <object id="9" name="point" type="point" gid="34" x="807.455" y="1022.5" width="30" height="30"/>
+  <object id="10" name="point" type="point" gid="34" x="1107.41" y="180.793" width="30" height="30"/>
+  <object id="11" name="enemy" type="enemy" gid="15" x="113" y="767.044" width="30" height="30"/>
+  <object id="12" name="point" type="point" gid="34" x="1167.05" y="752.086" width="30" height="30"/>
+  <object id="13" name="point" type="point" gid="34" x="1826.71" y="361.753" width="30" height="30"/>
+  <object id="14" name="point" type="point" gid="34" x="89.63" y="481.669" width="30" height="30"/>
+  <object id="15" name="point" type="point" gid="34" x="717.788" y="600.834" width="30" height="30"/>
+  <object id="16" name="point" type="point" gid="34" x="1706.37" y="61.0858" width="30" height="30"/>
+  <object id="17" name="point" type="point" gid="34" x="58.88" y="480.919" width="30" height="30"/>
+  <object id="18" name="point" type="point" gid="34" x="1796.37" y="630.419" width="30" height="30"/>
+  <object id="19" name="point" type="point" gid="34" x="1168.33" y="242.376" width="30" height="30"/>
+  <object id="20" gid="14" x="-1" y="151.043" width="30" height="30"/>
+  <object id="21" name="point" type="point" gid="34" x="1705.88" y="718.251" width="30" height="30"/>
+  <object id="22" name="point" type="point" gid="34" x="1076.71" y="539.752" width="30" height="30"/>
+  <object id="23" name="enemy" type="enemy" gid="15" x="565" y="707.044" width="30" height="30"/>
+  <object id="24" name="point" type="point" gid="34" x="1769.71" y="93.0858" width="30" height="30"/>
+  <object id="25" name="point" type="point" gid="34" x="1766.63" y="419.669" width="30" height="30"/>
+  <object id="26" name="point" type="point" gid="34" x="747.788" y="601.501" width="30" height="30"/>
+  <object id="27" name="point" type="point" gid="34" x="301.545" y="1053.58" width="30" height="30"/>
+  <object id="28" name="point" type="point" gid="34" x="1136.3" y="751.336" width="30" height="30"/>
+  <object id="29" name="point" type="point" gid="34" x="1137.75" y="211.127" width="30" height="30"/>
+  <object id="30" name="point" type="point" gid="34" x="58.54" y="451.251" width="30" height="30"/>
+  <object id="31" name="point" type="point" gid="34" x="1826.71" y="660.752" width="30" height="30"/>
+  <object id="32" name="point" type="point" gid="34" x="1137.92" y="271.294" width="30" height="30"/>
+  <object id="33" name="point" type="point" gid="34" x="1705.88" y="418.251" width="30" height="30"/>
+  <object id="34" name="point" type="point" gid="34" x="449" y="241.043" width="30" height="30"/>
+  <object id="35" name="point" type="point" gid="34" x="1830.63" y="154.668" width="30" height="30"/>
+  <object id="36" name="point" type="point" gid="34" x="1735.37" y="629.086" width="30" height="30"/>
+  <object id="37" name="point" type="point" gid="34" x="89.46" y="421.503" width="30" height="30"/>
+  <object id="38" name="point" type="point" gid="34" x="1706.71" y="90.7528" width="30" height="30"/>
+  <object id="39" name="point" type="point" gid="34" x="1168.67" y="272.044" width="30" height="30"/>
+  <object id="40" name="point" type="point" gid="34" x="1200.55" y="1050.58" width="30" height="30"/>
+  <object id="41" name="point" type="point" gid="34" x="1735.88" y="718.919" width="30" height="30"/>
+  <object id="42" name="point" type="point" gid="34" x="1620.55" y="1051.58" width="30" height="30"/>
+  <object id="43" name="point" type="point" gid="34" x="1826.54" y="392.251" width="30" height="30"/>
+  <object id="44" name="point" type="point" gid="34" x="1826.88" y="421.919" width="30" height="30"/>
+  <object id="45" name="point" type="point" gid="34" x="718.128" y="630.501" width="30" height="30"/>
+  <object id="46" name="point" type="point" gid="34" x="28.54" y="450.585" width="30" height="30"/>
+  <object id="47" name="point" type="point" gid="34" x="179.37" y="391.419" width="30" height="30"/>
+  <object id="48" name="point" type="point" gid="34" x="1766.46" y="359.503" width="30" height="30"/>
+  <object id="49" name="point" type="point" gid="34" x="207.88" y="780.919" width="30" height="30"/>
+  <object id="50" name="point" type="point" gid="34" x="240.46" y="422.503" width="30" height="30"/>
+  <object id="51" name="point" type="point" gid="34" x="1168.5" y="211.877" width="30" height="30"/>
+  <object id="52" name="point" type="point" gid="34" x="1200.2" y="1020.91" width="30" height="30"/>
+  <object id="53" name="point" type="point" gid="34" x="1676.71" y="90.0858" width="30" height="30"/>
+  <object id="54" name="point" type="point" gid="34" x="1826.88" y="720.919" width="30" height="30"/>
+  <object id="55" name="point" type="point" gid="34" x="1046.37" y="509.419" width="30" height="30"/>
+  <object id="56" name="point" type="point" gid="34" x="28.71" y="420.085" width="30" height="30"/>
+  <object id="57" name="point" type="point" gid="34" x="1796.71" y="361.085" width="30" height="30"/>
+  <object id="58" name="point" type="point" gid="34" x="209.88" y="481.919" width="30" height="30"/>
+  <object id="59" name="point" type="point" gid="34" x="89.12" y="391.835" width="30" height="30"/>
+  <object id="60" name="point" type="point" gid="34" x="868.545" y="1053.58" width="30" height="30"/>
+  <object id="61" name="point" type="point" gid="34" x="1705.71" y="658.086" width="30" height="30"/>
+  <object id="62" name="point" type="point" gid="34" x="1046.88" y="599.251" width="30" height="30"/>
+  <object id="63" name="point" type="point" gid="34" x="209.71" y="421.753" width="30" height="30"/>
+  <object id="64" name="point" type="point" gid="34" x="209.54" y="452.251" width="30" height="30"/>
+  <object id="65" name="enemy" type="enemy" gid="15" x="1569" y="797.044" width="30" height="30"/>
+  <object id="66" name="point" type="point" gid="34" x="1857.12" y="332.835" width="30" height="30"/>
+  <object id="67" name="point" type="point" gid="34" x="1168.16" y="182.21" width="30" height="30"/>
+  <object id="68" name="point" type="point" gid="34" x="177.71" y="720.086" width="30" height="30"/>
+  <object id="69" name="point" type="point" gid="34" x="1107.46" y="540.502" width="30" height="30"/>
+  <object id="70" name="point" type="point" gid="34" x="240.12" y="392.835" width="30" height="30"/>
+  <object id="71" name="point" type="point" gid="34" x="1857.63" y="721.669" width="30" height="30"/>
+  <object id="72" name="point" type="point" gid="34" x="1705.37" y="628.419" width="30" height="30"/>
+  <object id="73" name="point" type="point" gid="34" x="1796.54" y="690.584" width="30" height="30"/>
+  <object id="74" name="point" type="point" gid="34" x="1826.37" y="332.085" width="30" height="30"/>
+  <object id="75" name="point" type="point" gid="34" x="1830.12" y="64.8358" width="30" height="30"/>
+  <object id="76" name="point" type="point" gid="34" x="1769.54" y="123.585" width="30" height="30"/>
+  <object id="77" name="enemy" type="enemy" gid="15" x="905" y="617.044" width="30" height="30"/>
+  <object id="78" name="point" type="point" gid="34" x="207.71" y="720.752" width="30" height="30"/>
+  <object id="79" name="enemy" type="enemy" gid="15" x="1327" y="225.043" width="30" height="30"/>
+  <object id="80" name="point" type="point" gid="34" x="868.205" y="1023.91" width="30" height="30"/>
+  <object id="81" name="point" type="point" gid="34" x="1857.46" y="362.503" width="30" height="30"/>
+  <object id="82" name="enemy" type="enemy" gid="15" x="1498.33" y="361.044" width="30" height="30"/>
+  <object id="83" name="point" type="point" gid="34" x="240.63" y="482.669" width="30" height="30"/>
+  <object id="84" name="point" type="point" gid="34" x="1166.7" y="722.419" width="30" height="30"/>
+  <object id="85" name="point" type="point" gid="34" x="1107.12" y="510.836" width="30" height="30"/>
+  <object id="86" name="point" type="point" gid="34" x="58.37" y="391.085" width="30" height="30"/>
+  <object id="87" name="point" type="point" gid="34" x="1705.71" y="358.085" width="30" height="30"/>
+  <object id="88" name="point" type="point" gid="34" x="1105.95" y="721.001" width="30" height="30"/>
+  <object id="89" name="point" type="point" gid="34" x="207.54" y="751.251" width="30" height="30"/>
+  <object id="90" name="point" type="point" gid="34" x="1135.95" y="721.669" width="30" height="30"/>
+  <object id="91" name="point" type="point" gid="34" x="1766.29" y="690.001" width="30" height="30"/>
+  <object id="92" name="point" type="point" gid="34" x="359" y="241.71" width="30" height="30"/>
+  <object id="93" name="enemy" type="enemy" gid="15" x="1217" y="737.044" width="30" height="30"/>
+  <object id="94" name="point" type="point" gid="34" x="778.878" y="631.919" width="30" height="30"/>
+  <object id="95" name="point" type="point" gid="34" x="1796.71" y="660.086" width="30" height="30"/>
+  <object id="96" name="point" type="point" gid="34" x="270.455" y="1023.17" width="30" height="30"/>
+  <object id="97" name="point" type="point" gid="34" x="1137.41" y="181.46" width="30" height="30"/>
+  <object id="98" name="point" type="point" gid="34" x="1769.37" y="63.4188" width="30" height="30"/>
+  <object id="99" name="point" type="point" gid="34" x="1076.37" y="510.086" width="30" height="30"/>
+  <object id="100" name="point" type="point" gid="34" x="1857.12" y="631.836" width="30" height="30"/>
+  <object id="101" name="point" type="point" gid="34" x="1169.8" y="1049.83" width="30" height="30"/>
+  <object id="102" name="point" type="point" gid="34" x="1769.88" y="153.251" width="30" height="30"/>
+  <object id="103" name="point" type="point" gid="34" x="1799.54" y="124.252" width="30" height="30"/>
+  <object id="104" name="point" type="point" gid="34" x="301.205" y="1023.92" width="30" height="30"/>
+  <object id="105" name="enemy" type="enemy" gid="15" x="931" y="313.044" width="30" height="30"/>
+  <object id="106" name="point" type="point" gid="34" x="1106.3" y="750.669" width="30" height="30"/>
+  <object id="107" name="point" type="point" gid="34" x="1139.45" y="1019.5" width="30" height="30"/>
+  <object id="108" name="point" type="point" gid="34" x="1766.12" y="329.835" width="30" height="30"/>
+  <object id="109" name="point" type="point" gid="34" x="1735.37" y="329.085" width="30" height="30"/>
+  <object id="110" name="point" type="point" gid="34" x="1706.88" y="150.918" width="30" height="30"/>
+  <object id="111" name="point" type="point" gid="34" x="177.37" y="690.419" width="30" height="30"/>
+  <object id="112" name="point" type="point" gid="34" x="1796.37" y="331.419" width="30" height="30"/>
+  <object id="113" name="point" type="point" gid="34" x="238.46" y="721.502" width="30" height="30"/>
+  <object id="114" name="point" type="point" gid="34" x="1857.63" y="422.669" width="30" height="30"/>
+  <object id="115" name="point" type="point" gid="34" x="1107.29" y="571.001" width="30" height="30"/>
+  <object id="116" name="point" type="point" gid="34" x="1676.54" y="120.585" width="30" height="30"/>
+  <object id="117" name="point" type="point" gid="34" x="1559.45" y="1020.5" width="30" height="30"/>
+  <object id="118" name="point" type="point" gid="34" x="1735.71" y="358.753" width="30" height="30"/>
+  <object id="119" name="point" type="point" gid="34" x="1706.54" y="121.252" width="30" height="30"/>
+  <object id="120" name="point" type="point" gid="34" x="1799.88" y="153.918" width="30" height="30"/>
+  <object id="121" name="point" type="point" gid="34" x="1735.54" y="689.251" width="30" height="30"/>
+  <object id="122" name="point" type="point" gid="34" x="1826.37" y="631.086" width="30" height="30"/>
+  <object id="123" name="point" type="point" gid="34" x="1737.12" y="61.8358" width="30" height="30"/>
+  <object id="124" name="point" type="point" gid="34" x="1830.46" y="94.5028" width="30" height="30"/>
+  <object id="125" name="point" type="point" gid="34" x="1676.37" y="60.4188" width="30" height="30"/>
+  <object id="126" name="point" type="point" gid="34" x="1076.88" y="599.919" width="30" height="30"/>
+  <object id="127" name="point" type="point" gid="34" x="1799.71" y="93.7528" width="30" height="30"/>
+  <object id="128" name="point" type="point" gid="34" x="1139.8" y="1049.17" width="30" height="30"/>
+  <object id="129" name="point" type="point" gid="34" x="177.54" y="750.584" width="30" height="30"/>
+  <object id="130" name="point" type="point" gid="34" x="240.455" y="1022.5" width="30" height="30"/>
+  <object id="131" name="point" type="point" gid="34" x="209.37" y="392.085" width="30" height="30"/>
+  <object id="132" name="point" type="point" gid="34" x="59.455" y="1021.16" width="30" height="30"/>
+  <object id="133" name="point" type="point" gid="34" x="179.54" y="451.585" width="30" height="30"/>
+  <object id="134" name="enemy" type="enemy" gid="15" x="1408.33" y="494.376" width="30" height="30"/>
+  <object id="135" name="point" type="point" gid="34" x="90.205" y="1021.91" width="30" height="30"/>
+  <object id="136" name="point" type="point" gid="34" x="28.37" y="390.419" width="30" height="30"/>
+  <object id="137" name="point" type="point" gid="34" x="29.795" y="1050.17" width="30" height="30"/>
+  <object id="138" name="point" type="point" gid="34" x="1766.63" y="719.669" width="30" height="30"/>
+  <object id="139" name="point" type="point" gid="34" x="1620.2" y="1021.91" width="30" height="30"/>
+  <object id="140" name="point" type="point" gid="34" x="1705.54" y="388.585" width="30" height="30"/>
+  <object id="141" name="point" type="point" gid="34" x="1826.54" y="691.251" width="30" height="30"/>
+  <object id="142" name="point" type="point" gid="34" x="1046.71" y="539.086" width="30" height="30"/>
+  <object id="143" name="point" type="point" gid="34" x="1137.58" y="241.626" width="30" height="30"/>
+  <object id="144" name="point" type="point" gid="34" x="89.29" y="452.001" width="30" height="30"/>
+  <object id="145" name="point" type="point" gid="34" x="1830.29" y="125.002" width="30" height="30"/>
+  <object id="146" name="point" type="point" gid="34" x="28.88" y="480.251" width="30" height="30"/>
+  <object id="147" name="enemy" type="enemy" gid="15" x="449" y="1035.04" width="30" height="30"/>
+  <object id="148" name="point" type="point" gid="34" x="1107.58" y="240.959" width="30" height="30"/>
+  <object id="149" name="point" type="point" gid="34" x="179.71" y="421.085" width="30" height="30"/>
+  <object id="150" name="point" type="point" gid="34" x="1796.88" y="720.251" width="30" height="30"/>
+  <object id="151" name="point" type="point" gid="34" x="58.71" y="420.753" width="30" height="30"/>
+  <object id="152" name="point" type="point" gid="34" x="240.29" y="453.001" width="30" height="30"/>
+  <object id="153" name="point" type="point" gid="34" x="748.128" y="631.169" width="30" height="30"/>
+  <object id="154" name="point" type="point" gid="34" x="177.88" y="780.251" width="30" height="30"/>
+  <object id="155" name="point" type="point" gid="34" x="1589.45" y="1021.16" width="30" height="30"/>
+  <object id="156" name="point" type="point" gid="34" x="29.455" y="1020.5" width="30" height="30"/>
+  <object id="157" name="point" type="point" gid="34" x="778.538" y="602.251" width="30" height="30"/>
+  <object id="158" name="point" type="point" gid="34" x="179.88" y="481.251" width="30" height="30"/>
+  <object id="159" name="point" type="point" gid="34" x="178" y="241.043" width="30" height="30"/>
+  <object id="160" name="point" type="point" gid="34" x="1705.54" y="688.584" width="30" height="30"/>
+  <object id="161" name="point" type="point" gid="34" x="1589.8" y="1050.83" width="30" height="30"/>
+  <object id="162" name="goal" type="goal" gid="35" x="1847" y="1005.04" width="30" height="30"/>
+  <object id="163" name="point" type="point" gid="34" x="1559.8" y="1050.17" width="30" height="30"/>
+  <object id="164" name="point" type="point" gid="34" x="1737.29" y="122.002" width="30" height="30"/>
+  <object id="165" name="point" type="point" gid="34" x="238.12" y="691.836" width="30" height="30"/>
+  <object id="166" name="point" type="point" gid="34" x="90.545" y="1051.58" width="30" height="30"/>
+  <object id="167" name="point" type="point" gid="34" x="807.795" y="1052.17" width="30" height="30"/>
+  <object id="168" name="enemy" type="enemy" gid="15" x="157" y="1035.04" width="30" height="30"/>
+  <object id="169" name="point" type="point" gid="34" x="1766.29" y="390.001" width="30" height="30"/>
+  <object id="170" name="point" type="point" gid="34" x="1676.88" y="150.251" width="30" height="30"/>
+  <object id="171" name="point" type="point" gid="34" x="1766.12" y="629.836" width="30" height="30"/>
+  <object id="172" name="point" type="point" gid="34" x="240.795" y="1052.17" width="30" height="30"/>
+  <object id="173" name="point" type="point" gid="34" x="1799.37" y="64.0858" width="30" height="30"/>
+  <object id="174" name="point" type="point" gid="34" x="270.795" y="1052.83" width="30" height="30"/>
+  <object id="175" name="point" type="point" gid="34" x="238.63" y="781.669" width="30" height="30"/>
+  <object id="176" name="point" type="point" gid="34" x="1735.54" y="389.251" width="30" height="30"/>
+  <object id="177" name="point" type="point" gid="34" x="59.795" y="1050.83" width="30" height="30"/>
+  <object id="178" name="point" type="point" gid="34" x="1107.63" y="600.669" width="30" height="30"/>
+  <object id="179" name="point" type="point" gid="34" x="1169.45" y="1020.16" width="30" height="30"/>
+  <object id="180" name="enemy" type="enemy" gid="15" x="121" y="453.044" width="30" height="30"/>
+  <object id="181" name="point" type="point" gid="34" x="837.455" y="1023.16" width="30" height="30"/>
+  <object id="182" name="point" type="point" gid="34" x="238.29" y="752.001" width="30" height="30"/>
+  <object id="183" name="point" type="point" gid="34" x="1857.29" y="393.001" width="30" height="30"/>
+  <object id="184" name="point" type="point" gid="34" x="1737.63" y="151.668" width="30" height="30"/>
+  <object id="185" name="point" type="point" gid="34" x="1046.54" y="569.584" width="30" height="30"/>
+  <object id="186" name="point" type="point" gid="34" x="1737.46" y="91.5028" width="30" height="30"/>
+  <object id="187" name="point" type="point" gid="34" x="267.667" y="242.376" width="30" height="30"/>
+  <object id="188" name="point" type="point" gid="34" x="1796.54" y="391.585" width="30" height="30"/>
+  <object id="189" name="point" type="point" gid="34" x="1735.88" y="418.919" width="30" height="30"/>
+  <object id="190" name="point" type="point" gid="34" x="1796.88" y="421.251" width="30" height="30"/>
+  <object id="191" name="point" type="point" gid="34" x="1705.37" y="328.419" width="30" height="30"/>
+  <object id="192" name="point" type="point" gid="34" x="1735.71" y="658.752" width="30" height="30"/>
+  <object id="193" name="point" type="point" gid="34" x="1857.29" y="692.001" width="30" height="30"/>
+  <object id="194" name="point" type="point" gid="34" x="1107.75" y="210.46" width="30" height="30"/>
+  <object id="195" name="goal" type="goal" gid="35" x="1863" y="127.043" width="30" height="30"/>
+ </objectgroup>
+</map>

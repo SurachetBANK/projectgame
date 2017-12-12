@@ -1,0 +1,211 @@
+{
+  "level": [
+    {
+      "type": "image",
+      "key": "mono",
+      "url": "assets/images/mono.png",
+      "overwrite": false
+    },
+    {
+      "type": "spritesheet",
+      "key": "street",
+      "url": "assets/tilemap/street.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "BG",
+      "url": "assets/images/wallhaven-295290.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "atlas",
+      "key": "Point",
+      "textureURL": "assets/atlas/Point.png",
+      "atlasURL": "assets/atlas/Point.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "tilemap",
+      "key": "mymap",
+      "url": "assets/tilemap/mymap.json",
+      "format": "TILED_JSON"
+    },
+    {
+      "type": "atlas",
+      "key": "JimmyMotion",
+      "textureURL": "assets/atlas/JimmyMotion.png",
+      "atlasURL": "assets/atlas/JimmyMotion.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "EGame",
+      "textureURL": "assets/atlas/EGame.png",
+      "atlasURL": "assets/atlas/EGame.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "EWY",
+      "textureURL": "assets/atlas/EWY.png",
+      "atlasURL": "assets/atlas/EWY.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "EWeed",
+      "textureURL": "assets/atlas/EWeed.png",
+      "atlasURL": "assets/atlas/EWeed.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "audio",
+      "key": "run",
+      "urls": ["assets/images/Dutty Moonshine (Takin it Back) - Gaming Background Music (HD).mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "Jump",
+      "urls": ["assets/images/Cartoon Jump Sound Effect.mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "Hit",
+      "urls": ["assets/images/Punch - Gaming Sound Effect .mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "Coin",
+      "urls": ["assets/images/Super Mario Bros.-Coin Sound Effect.mp3"],
+      "autoDecode": true
+    }
+  ],
+  "start": [{
+    "type": "image",
+    "key": "tap-to-start",
+    "url": "assets/images/tap-to-start.png",
+    "overwrite": false
+  }],
+  "preload": [{
+    "type": "image",
+    "key": "loading",
+    "url": "assets/images/loading.png",
+    "overwrite": false
+  }],
+  "End": [
+    {
+      "type": "image",
+      "key": "23574301_1568238663244156_914312409_n",
+      "url": "assets/images/23574301_1568238663244156_914312409_n.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "V",
+      "url": "assets/images/V.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "boniatillo",
+      "url": "assets/images/boniatillo.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "end",
+      "url": "assets/images/end.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "s",
+      "url": "assets/images/s.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "skip",
+      "url": "assets/images/skip.gif",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "sp",
+      "url": "assets/images/sp.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "start1",
+      "url": "assets/images/start.png",
+      "overwrite": false
+    },
+    {
+      "type": "video",
+      "key": "T",
+      "urls": ["assets/images/T.mp4"],
+      "asBlob": false
+    },
+    {
+      "type": "video",
+      "key": "wormhole",
+      "urls": ["assets/images/wormhole.mp4"],
+      "asBlob": false
+    }
+  ],
+  "Howtoplay": [
+    {
+      "type": "image",
+      "key": "image",
+      "url": "assets/images/s.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "image1",
+      "url": "assets/atlas/EGame.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "sp",
+      "url": "assets/images/sp.png",
+      "overwrite": false
+    }
+  ],
+  "Level2": [],
+  "Story": [
+    {
+      "type": "image",
+      "key": "start1",
+      "url": "assets/images/start.png",
+      "overwrite": false
+    },
+    {
+      "type": "image",
+      "key": "image5",
+      "url": "assets/images/s.png",
+      "overwrite": false
+    }
+  ],
+  "meta": {
+    "generated": "1511263320358",
+    "app": "Phaser Editor",
+    "url": "http://phasereditor.boniatillo.com",
+    "version": "1.0",
+    "copyright": "Arian Fornaris (c) 2015,2016"
+  }
+}

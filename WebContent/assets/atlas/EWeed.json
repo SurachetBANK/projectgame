@@ -1,0 +1,49 @@
+{
+  "frames": {
+    "sprite_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 5,
+        "y": 5,
+        "w": 25,
+        "h": 30
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 25,
+        "h": 30
+      },
+      "sourceSize": {
+        "w": 25,
+        "h": 30
+      }
+    },
+    "sprite_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 35,
+        "y": 5,
+        "w": 25,
+        "h": 30
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 25,
+        "h": 30
+      },
+      "sourceSize": {
+        "w": 25,
+        "h": 30
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "EWeed.png"
+  }
+}

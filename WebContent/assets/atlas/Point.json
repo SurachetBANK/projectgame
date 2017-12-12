@@ -1,0 +1,169 @@
+{
+  "frames": {
+    "point_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 10,
+        "y": 48,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    },
+    "point_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 10,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    },
+    "point_2": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 44,
+        "y": 48,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    },
+    "point_3": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 44,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    },
+    "point_4": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 78,
+        "y": 48,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    },
+    "point_5": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 78,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    },
+    "point_6": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 112,
+        "y": 48,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    },
+    "point_7": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 112,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 24,
+        "h": 48
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "Point.png"
+  }
+}

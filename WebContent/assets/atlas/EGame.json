@@ -1,0 +1,89 @@
+{
+  "frames": {
+    "sprite_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 10,
+        "y": 10,
+        "w": 30,
+        "h": 30
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 30
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 30
+      }
+    },
+    "sprite_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 50,
+        "y": 10,
+        "w": 30,
+        "h": 30
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 30
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 30
+      }
+    },
+    "sprite_2": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 90,
+        "y": 10,
+        "w": 30,
+        "h": 30
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 30
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 30
+      }
+    },
+    "sprite_3": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 130,
+        "y": 10,
+        "w": 30,
+        "h": 30
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 30
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 30
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "EGame.png"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "frames": {
+    "idle_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 5,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "idle_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 355,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "jump_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 40,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 75,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 110,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_2": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 145,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_3": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 180,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_4": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 215,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_5": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 250,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_6": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 285,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "run_7": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 320,
+        "y": 5,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "JimmyMotion.png"
+  }
+}
