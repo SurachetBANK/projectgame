@@ -35,8 +35,8 @@
     },
     {
       "type": "tilemap",
-      "key": "mymap",
-      "url": "assets/tilemap/mymap.json",
+      "key": "mymap1",
+      "url": "assets/tilemap/mymap1.json",
       "format": "TILED_JSON"
     },
     {
@@ -90,6 +90,13 @@
       "key": "Coin",
       "urls": ["assets/images/Super Mario Bros.-Coin Sound Effect.mp3"],
       "autoDecode": true
+    },
+    {
+      "type": "atlas",
+      "key": "NextYear",
+      "textureURL": "assets/atlas/NextYear.png",
+      "atlasURL": "assets/atlas/NextYear.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
     }
   ],
   "start": [{
@@ -202,7 +209,7 @@
     }
   ],
   "meta": {
-    "generated": "1511263320358",
+    "generated": "1513110236379",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

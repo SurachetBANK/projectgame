@@ -11,10 +11,9 @@ Level2.prototype = proto;
 
 Level2.prototype.create = function() {
 	
-	this.BGmusic = this.add.sound("run",.4,true);
-	this.BGmusic.play();
+
 	this.Jump = this.add.sound("Jump",2,false);
-	this.Hit = this.add.sound("Hit",2,false);
+	this.Hit = this.add.sound("Hit",1.5,false);
 	this.Hit.allowMultiple=true;
 	this.point = this.add.sound("Coin",1,false);
 	this.point.allowMultiple=true;
@@ -27,7 +26,7 @@ Level2.prototype.create = function() {
 	this.bg.width = 1920;
 	this.bg.height = 1080;
 
-	this.map = this.game.add.tilemap("mymap");
+	this.map = this.game.add.tilemap("mymap1");
 	this.map.addTilesetImage('street');
 	this.maplayer = this.map.createLayer("Tile Layer 1");
 	this.Amaplayer = this.map.createLayer("Tile Layer 2");
@@ -40,7 +39,7 @@ Level2.prototype.create = function() {
 	// แสดง sprite
 	this.enemies = this.add.group();
 	this.Gpoint = this.add.group();
-	this.concat = this.add.group();
+	this.concat = this.add.group() ;
 	this.ui = this.add.group();
 	this.ui.fixedToCamera = true;
 	// /////////////////////////////////////////////
@@ -81,10 +80,11 @@ Level2.prototype.create = function() {
 			var Enemy6 = this.addEWeed(obj.x, obj.y);
 			this.enemies.add(Enemy6);
 		}else if (obj.type == "goal") {
-			var goal = this.addPlayer(obj.x, obj.y);
+			var goal = this.addGoal(obj.x, obj.y);
 			this.concat.add(goal);
 		}
 	}
+	this.game.score = 0;
 	this.scoreText = this.add.text(this.game.width - 610, 20, "คะแนน : "
 			+ this.game.score, {
 		fill : 'white'
@@ -102,6 +102,19 @@ function gframes(key, n) {
 	}
 	return f;
 }
+
+Level2.prototype.addGoal = function(x, y) {
+	J = this.add.sprite(x, y, "NextYear");
+	J.animations.add("idle", gframes("NextY", 9), 5, true);
+	J.anchor.set(0.5, 0.5);
+	J.smoothed = false;
+	this.game.physics.arcade.enable(J);
+	this.game.physics.enable(J);
+	this.game.physics.arcade.gravity.y = 1000;     
+	J.play("idle");
+	J.body.collideWorldBounds = true;
+	return J;
+};
 
 Level2.prototype.addPlayer = function(x, y) {
 	J = this.add.sprite(x, y, "JimmyMotion");
@@ -255,7 +268,7 @@ Level2.prototype.onCollidePlayerEnemy = function(player, enemies) {
 };
 
 Level2.prototype.onCollidePlayerConcat = function(player, concats){
-	this.BGmusic.stop();
-	this.game.state.start("Level2",true,false,this.player);
+	//this.BGmusic.stop();
+	this.game.state.start("Level",true,false,this.player);
 	};
 

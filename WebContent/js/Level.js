@@ -27,7 +27,7 @@ Level.prototype.create = function() {
 	this.bg.width = 1920;
 	this.bg.height = 1080;
 
-	this.map = this.game.add.tilemap("mymap");
+	this.map = this.game.add.tilemap("mymap1");
 	this.map.addTilesetImage('street');
 	this.maplayer = this.map.createLayer("Tile Layer 1");
 	this.Amaplayer = this.map.createLayer("Tile Layer 2");
@@ -81,7 +81,7 @@ Level.prototype.create = function() {
 			var Enemy6 = this.addEWeed(obj.x, obj.y);
 			this.enemies.add(Enemy6);
 		}else if (obj.type == "goal") {
-			var goal = this.addPlayer(obj.x, obj.y);
+			var goal = this.addGoal(obj.x, obj.y);
 			this.concat.add(goal);
 		}
 	}
@@ -103,6 +103,19 @@ function gframes(key, n) {
 	}
 	return f;
 }
+
+Level.prototype.addGoal = function(x, y) {
+	J = this.add.sprite(x, y, "NextYear");
+	J.animations.add("idle", gframes("NextY", 9), 5, true);
+	J.anchor.set(0.5, 0.5);
+	J.smoothed = false;
+	this.game.physics.arcade.enable(J);
+	this.game.physics.enable(J);
+	this.game.physics.arcade.gravity.y = 1000;     
+	J.play("idle");
+	J.body.collideWorldBounds = true;
+	return J;
+};
 
 Level.prototype.addPlayer = function(x, y) {
 	J = this.add.sprite(x, y, "JimmyMotion");
@@ -256,7 +269,7 @@ Level.prototype.onCollidePlayerEnemy = function(player, enemies) {
 };
 
 Level.prototype.onCollidePlayerConcat = function(player, concats){
-	this.BGmusic.stop();
+	//this.BGmusic.stop();
 	this.game.state.start("Level2",true,false,this.player);
 	};
 
