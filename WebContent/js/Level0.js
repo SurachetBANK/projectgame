@@ -1,16 +1,18 @@
 /**
- * Level2 state.
+ * Level0 state.
  */
-function Level2() {
+function Level0() {
 	Phaser.State.call(this);
 }
 
 /** @type Phaser.State */
 var proto = Object.create(Phaser.State);
-Level2.prototype = proto;
+Level0.prototype = proto;
 
-Level2.prototype.create = function() {
+Level0.prototype.create = function() {
 
+	this.BGmusic = this.add.sound("run", .4, true);
+	this.BGmusic.play();
 	this.Jump = this.add.sound("Jump", 2, false);
 	this.Hit = this.add.sound("Hit", 1.5, false);
 	this.Hit.allowMultiple = true;
@@ -25,12 +27,13 @@ Level2.prototype.create = function() {
 	this.bg.width = 1920;
 	this.bg.height = 1080;
 
-	this.map = this.game.add.tilemap("mymap1");
+	this.map = this.game.add.tilemap("level0");
 	this.map.addTilesetImage('street');
-	this.maplayer = this.map.createLayer("Tile Layer 1");
-	this.Amaplayer = this.map.createLayer("Tile Layer 2");
-	this.maplayer.resizeWorld();
-	this.map.setCollisionBetween(0, 99, true, this.map_layer);
+
+	//this.maplayer2 = this.map.createLayer("Tile Layer 2");	
+	this.maplayer1 = this.map.createLayer("Tile Layer 1");
+	this.maplayer1.resizeWorld();
+	this.map.setCollisionBetween(0, 99, true, this.maplayer1);
 	// this.addPlayer(this.world.centerX, this.world.centerY);
 
 	this.cursor = this.input.keyboard.createCursorKeys();
@@ -42,7 +45,20 @@ Level2.prototype.create = function() {
 	this.ui = this.add.group();
 	this.ui.fixedToCamera = true;
 	// /////////////////////////////////////////////
-
+	this.howmoveL = this.addHowto(45, 1020);
+	this.howmoveL.play("left");
+	this.howmoveR = this.addHowto(45, 980);
+	this.howmoveR.play("right");
+	this.howmoveJ = this.addHowto(1020, 960);
+	this.howmoveJ.play("jump");
+	this.howPoint = this.addHowto(750, 980);
+	this.howPoint.play("point");
+	this.howEnemy0 = this.addHowto(1330, 950);
+	this.howEnemy0.play("enemy0");
+	this.howEnemy0 = this.addHowto(1330, 980);
+	this.howEnemy0.play("enemy1");
+	this.howEnemy0 = this.addHowto(1330, 1010);
+	this.howEnemy0.play("enemy2");
 	// ////////////////////////////////////
 	for (x in this.map.objects.object) {
 		var obj = this.map.objects.object[x];
@@ -83,13 +99,17 @@ Level2.prototype.create = function() {
 			this.concat.add(goal);
 		}
 	}
-	//this.game.score = 0;
-	this.scoreText = this.add.text(this.game.width - 610, 20, "คะแนน : "
+	this.game.score = 0;
+	this.scoreText = this.add.text(this.game.width - 610, 20, "Score : "
 			+ this.game.score, {
 		fill : 'white'
 	}, this.ui);
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
+
+	if (this.player.x == 60) {
+		this.player.body.velocity.y = -350;
+	}
 
 };
 
@@ -102,7 +122,21 @@ function gframes(key, n) {
 	return f;
 }
 
-Level2.prototype.addGoal = function(x, y) {
+Level0.prototype.addHowto = function(x, y) {
+	J = this.add.sprite(x, y, "howto");
+	J.animations.add("left", [ "Howto_0" ], 1, true);
+	J.animations.add("right", [ "Howto_1" ], 1, true);
+	J.animations.add("jump", [ "Howto_2" ], 1, true);
+	J.animations.add("point", [ "HowToScore" ], 1, true);
+	J.animations.add("enemy0", [ "HowToEnemy_0" ], 1, true);
+	J.animations.add("enemy1", [ "HowToEnemy_1" ], 1, true);
+	J.animations.add("enemy2", [ "HowToEnemy_2" ], 1, true);
+	J.anchor.set(0.5, 0.5);
+	J.smoothed = false;
+	return J;
+};
+
+Level0.prototype.addGoal = function(x, y) {
 	J = this.add.sprite(x, y, "NextYear");
 	J.animations.add("idle", gframes("NextY", 9), 5, true);
 	J.anchor.set(0.5, 0.5);
@@ -115,7 +149,7 @@ Level2.prototype.addGoal = function(x, y) {
 	return J;
 };
 
-Level2.prototype.addPlayer = function(x, y) {
+Level0.prototype.addPlayer = function(x, y) {
 	J = this.add.sprite(x, y, "JimmyMotion");
 	J.animations.add("idle", gframes("idle", 1), 5, true);
 	J.animations.add("jump", gframes("jump", 0), 1, true);
@@ -130,7 +164,7 @@ Level2.prototype.addPlayer = function(x, y) {
 	return J;
 };
 
-Level2.prototype.addEGame = function(x, y) {
+Level0.prototype.addEGame = function(x, y) {
 	G = this.add.sprite(x, y, "EGame");
 	G.animations.add("idle", gframes("sprite", 3), 5, true);
 	G.anchor.set(0.5, 0.5);
@@ -143,7 +177,7 @@ Level2.prototype.addEGame = function(x, y) {
 	return G;
 };
 
-Level2.prototype.addEWY = function(x, y) {
+Level0.prototype.addEWY = function(x, y) {
 	G = this.add.sprite(x, y, "EWY");
 	G.animations.add("idle", gframes("sprite", 1), 3, true);
 	G.anchor.set(0.5, 0.5);
@@ -156,7 +190,7 @@ Level2.prototype.addEWY = function(x, y) {
 	return G;
 };
 
-Level2.prototype.addEWeed = function(x, y) {
+Level0.prototype.addEWeed = function(x, y) {
 	G = this.add.sprite(x, y, "EWeed");
 	G.animations.add("idle", gframes("sprite", 1), 3, true);
 	G.anchor.set(0.5, 0.5);
@@ -169,7 +203,7 @@ Level2.prototype.addEWeed = function(x, y) {
 	return G;
 };
 
-Level2.prototype.addPoint = function(x, y) {
+Level0.prototype.addPoint = function(x, y) {
 
 	P = this.add.sprite(x, y, "Point");
 	// this.game.physics.arcade.enable(P);
@@ -177,17 +211,16 @@ Level2.prototype.addPoint = function(x, y) {
 	P.anchor.set(0.5, 1);
 	P.smoothed = false;
 	this.game.physics.enable(P);
-	P.play("idle");
 	P.body.collideWorldBounds = true;
 	return P;
 
 };
 
-Level2.prototype.update = function() {
-	this.game.physics.arcade.collide(this.player, this.maplayer);
-	this.game.physics.arcade.collide(this.Gpoint, this.maplayer);
-	this.game.physics.arcade.collide(this.enemies, this.maplayer);
-	this.game.physics.arcade.collide(this.concat, this.maplayer);
+Level0.prototype.update = function() {
+	this.game.physics.arcade.collide(this.player, this.maplayer1);
+	this.game.physics.arcade.collide(this.Gpoint, this.maplayer1);
+	this.game.physics.arcade.collide(this.enemies, this.maplayer1);
+	this.game.physics.arcade.collide(this.concat, this.maplayer1);
 
 	this.physics.arcade.collide(this.Gpoint, this.player,
 			this.onCollidePlayerPoint, null, this);
@@ -197,14 +230,15 @@ Level2.prototype.update = function() {
 			this.onCollidePlayerConcat, null, this);
 
 	// //////////
+
 	if (this.cursor.left.isDown) {
 		this.player.scale.x = -1;
 		this.player.body.velocity.x = 250 * -1;
 		this.player.play("run");
 		if (this.cursor.up.isDown) {
+			this.player.play("jump");
 			if (this.player.body.velocity.y == 0) {
 				this.player.body.velocity.y = -350;
-				this.player.play("jump");
 				this.Jump.play();
 			}
 
@@ -214,9 +248,10 @@ Level2.prototype.update = function() {
 		this.player.body.velocity.x = 250;
 		this.player.play("run");
 		if (this.cursor.up.isDown) {
+			this.player.play("jump");
 			if (this.player.body.velocity.y == 0) {
 				this.player.body.velocity.y = -350;
-				this.player.play("jump");
+
 				this.Jump.play();
 			}
 
@@ -249,24 +284,24 @@ Level2.prototype.update = function() {
 
 };
 
-Level2.prototype.onCollidePlayerPoint = function(player, Gpoint) {
+Level0.prototype.onCollidePlayerPoint = function(player, Gpoint) {
 	Gpoint.kill();
 	this.game.score = this.game.score + 5;
-	this.scoreText.text = "คะแนน : " + this.game.score;
+	this.scoreText.text = "Score : " + this.game.score;
 	this.point.play();
 
 };
 
-Level2.prototype.onCollidePlayerEnemy = function(player, enemies) {
+Level0.prototype.onCollidePlayerEnemy = function(player, enemies) {
 	player.canHit = false;
 	enemies.canHit = false;
 	this.Hit.play();
 	player.body.velocity.y = -300;
 	this.game.score = this.game.score - 1;
-	this.scoreText.text = "คะแนน : " + this.game.score;
+	this.scoreText.text = "Score : " + this.game.score;
 };
 
-Level2.prototype.onCollidePlayerConcat = function(player, concats) {
+Level0.prototype.onCollidePlayerConcat = function(player, concats) {
 	// this.BGmusic.stop();
-	this.game.state.start("Level", true, false, this.player);
+	this.game.state.start("Level1", true, false, this.player);
 };

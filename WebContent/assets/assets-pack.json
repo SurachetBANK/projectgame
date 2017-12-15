@@ -35,8 +35,8 @@
     },
     {
       "type": "tilemap",
-      "key": "mymap1",
-      "url": "assets/tilemap/mymap1.json",
+      "key": "level1",
+      "url": "assets/tilemap/level1.json",
       "format": "TILED_JSON"
     },
     {
@@ -97,6 +97,19 @@
       "textureURL": "assets/atlas/NextYear.png",
       "atlasURL": "assets/atlas/NextYear.json",
       "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "howto",
+      "textureURL": "assets/atlas/howto.png",
+      "atlasURL": "assets/atlas/howto.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "tilemap",
+      "key": "level0",
+      "url": "assets/tilemap/level0.json",
+      "format": "TILED_JSON"
     }
   ],
   "start": [{
@@ -209,7 +222,7 @@
     }
   ],
   "meta": {
-    "generated": "1513110236379",
+    "generated": "1513360201434",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

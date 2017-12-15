@@ -1,6 +1,15 @@
 {
   "version": 2,
-  "files": ["pointINmap.png"],
+  "files": [
+    "Design/Howto_0.png",
+    "Design/Howto_1.png",
+    "Design/Howto_2.png",
+    "Design/HowToScore.png",
+    "Design/HowToEnemy.png",
+    "Design/HowToEnemy_0.png",
+    "Design/HowToEnemy_1.png",
+    "Design/HowToEnemy_2.png"
+  ],
   "settings": {
     "pot": false,
     "paddingX": 0,
@@ -21,7 +30,7 @@
     "wrapX": "ClampToEdge",
     "wrapY": "ClampToEdge",
     "format": "RGBA8888",
-    "alias": false,
+    "alias": true,
     "outputFormat": "png",
     "jpegQuality": 0.8999999761581421,
     "ignoreBlankImages": true,

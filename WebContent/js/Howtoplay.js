@@ -34,6 +34,6 @@ Howtoplay.prototype.create = function() {
 };
 
 Howtoplay.prototype.startGame = function() {
-	this.game.state.start("Level");
+	this.game.state.start("Level0");
 };
 
