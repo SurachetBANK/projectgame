@@ -37,5 +37,5 @@ Menu.prototype.Gotoplay = function() {
 };
 
 Menu.prototype.Gotostory = function() {
-	this.game.state.start("Story");
+	this.game.state.start("Counting");
 };

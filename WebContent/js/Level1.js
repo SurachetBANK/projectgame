@@ -11,8 +11,7 @@ Level1.prototype = proto;
 
 Level1.prototype.create = function() {
 
-	//this.BGmusic = this.add.sound("run", .4, true);
-	//this.BGmusic.play();
+	
 	this.Jump = this.add.sound("Jump", 2, false);
 	this.Hit = this.add.sound("Hit", 1.5, false);
 	this.Hit.allowMultiple = true;
@@ -93,9 +92,6 @@ Level1.prototype.create = function() {
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
 
-	if (this.player.x == 60) {
-		this.player.body.velocity.y = -350;
-	}
 
 };
 
@@ -194,6 +190,7 @@ Level1.prototype.update = function() {
 	this.game.physics.arcade.collide(this.Gpoint, this.maplayer);
 	this.game.physics.arcade.collide(this.enemies, this.maplayer);
 	this.game.physics.arcade.collide(this.concat, this.maplayer);
+	this.game.physics.arcade.collide(this.enemies, this.enemies);
 
 	this.physics.arcade.collide(this.Gpoint, this.player,
 			this.onCollidePlayerPoint, null, this);
@@ -276,5 +273,5 @@ Level1.prototype.onCollidePlayerEnemy = function(player, enemies) {
 
 Level1.prototype.onCollidePlayerConcat = function(player, concats) {
 	// this.BGmusic.stop();
-	this.game.state.start("Level2", true, false, this.player);
+	this.game.state.start("Counting", true, false, this.player);
 };

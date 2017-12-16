@@ -70,25 +70,25 @@
     {
       "type": "audio",
       "key": "run",
-      "urls": ["assets/images/Dutty Moonshine (Takin it Back) - Gaming Background Music (HD).mp3"],
+      "urls": ["assets/audio/Dutty Moonshine (Takin it Back) - Gaming Background Music (HD).mp3"],
       "autoDecode": true
     },
     {
       "type": "audio",
       "key": "Jump",
-      "urls": ["assets/images/Cartoon Jump Sound Effect.mp3"],
+      "urls": ["assets/audio/Cartoon Jump Sound Effect.mp3"],
       "autoDecode": true
     },
     {
       "type": "audio",
       "key": "Hit",
-      "urls": ["assets/images/Punch - Gaming Sound Effect .mp3"],
+      "urls": ["assets/audio/Punch - Gaming Sound Effect .mp3"],
       "autoDecode": true
     },
     {
       "type": "audio",
       "key": "Coin",
-      "urls": ["assets/images/Super Mario Bros.-Coin Sound Effect.mp3"],
+      "urls": ["assets/audio/Super Mario Bros.-Coin Sound Effect.mp3"],
       "autoDecode": true
     },
     {
@@ -110,6 +110,19 @@
       "key": "level0",
       "url": "assets/tilemap/level0.json",
       "format": "TILED_JSON"
+    },
+    {
+      "type": "atlas",
+      "key": "Counting",
+      "textureURL": "assets/atlas/Count.png",
+      "atlasURL": "assets/atlas/Count.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "audio",
+      "key": "Drum",
+      "urls": ["assets/audio/Drum Roll - Gaming Sound Effect (HD).mp3"],
+      "autoDecode": true
     }
   ],
   "start": [{
@@ -222,7 +235,7 @@
     }
   ],
   "meta": {
-    "generated": "1513360201434",
+    "generated": "1513441763059",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
