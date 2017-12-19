@@ -1,0 +1,49 @@
+{
+  "frames": {
+    "beer_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 28,
+        "w": 21,
+        "h": 28
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 21,
+        "h": 28
+      }
+    },
+    "beer_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 28
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 21,
+        "h": 28
+      },
+      "sourceSize": {
+        "w": 21,
+        "h": 28
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "beer.png"
+  }
+}

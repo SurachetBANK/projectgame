@@ -30,7 +30,7 @@ Level0.prototype.create = function() {
 	this.map = this.game.add.tilemap("level0");
 	this.map.addTilesetImage('street');
 
-	//this.maplayer2 = this.map.createLayer("Tile Layer 2");	
+	// this.maplayer2 = this.map.createLayer("Tile Layer 2");
 	this.maplayer1 = this.map.createLayer("Tile Layer 1");
 	this.maplayer1.resizeWorld();
 	this.map.setCollisionBetween(0, 99, true, this.maplayer1);
@@ -53,12 +53,33 @@ Level0.prototype.create = function() {
 	this.howmoveJ.play("jump");
 	this.howPoint = this.addHowto(750, 980);
 	this.howPoint.play("point");
-	this.howEnemy0 = this.addHowto(1330, 950);
-	this.howEnemy0.play("enemy0");
-	this.howEnemy0 = this.addHowto(1330, 980);
-	this.howEnemy0.play("enemy1");
-	this.howEnemy0 = this.addHowto(1330, 1010);
-	this.howEnemy0.play("enemy2");
+	this.Beware = this.add.text(1200, 920, "Beware vices !", {
+		font : '35px ZoodHarit8Bit',
+		fill : 'white'
+	});
+	this.Beware.stroke = "black";
+	this.Beware.strokeThickness = 5;
+
+	this.cant = this.add.text(1200, 950, "You can't destroy them.", {
+		font : '35px ZoodHarit8Bit',
+		fill : 'white'
+	});
+	this.cant.stroke = "black";
+	this.cant.strokeThickness = 5;
+	
+	this.should = this.add.text(1200, 980, "So, you should jump over.", {
+		font : '35px ZoodHarit8Bit',
+		fill : 'white'
+	});
+	this.should.stroke = "black";
+	this.should.strokeThickness = 5;
+	
+	this.GOTO = this.add.text(1740, 900, "Go to Next State !!", {
+		font : '40px ZoodHarit8Bit',
+		fill : 'white'
+	});
+	this.GOTO.stroke = "black";
+	this.GOTO.strokeThickness = 5;
 	// ////////////////////////////////////
 	for (x in this.map.objects.object) {
 		var obj = this.map.objects.object[x];
@@ -102,12 +123,16 @@ Level0.prototype.create = function() {
 	this.game.score = 0;
 	this.scoreText = this.add.text(this.game.width - 610, 20, "Score : "
 			+ this.game.score, {
+		font : '65px ZoodHarit8Bit',
 		fill : 'white'
 	}, this.ui);
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
 
-
+	if (this.player.x == 300) {
+		this.game.score = this.game.score + 30;
+		this.scoreText.text = "Score : " + this.game.score;
+	}
 };
 
 function gframes(key, n) {
@@ -125,9 +150,6 @@ Level0.prototype.addHowto = function(x, y) {
 	J.animations.add("right", [ "Howto_1" ], 1, true);
 	J.animations.add("jump", [ "Howto_2" ], 1, true);
 	J.animations.add("point", [ "HowToScore" ], 1, true);
-	J.animations.add("enemy0", [ "HowToEnemy_0" ], 1, true);
-	J.animations.add("enemy1", [ "HowToEnemy_1" ], 1, true);
-	J.animations.add("enemy2", [ "HowToEnemy_2" ], 1, true);
 	J.anchor.set(0.5, 0.5);
 	J.smoothed = false;
 	return J;
@@ -300,6 +322,6 @@ Level0.prototype.onCollidePlayerEnemy = function(player, enemies) {
 };
 
 Level0.prototype.onCollidePlayerConcat = function(player, concats) {
-	
-	this.game.state.start("Counting", true, false, this.BGmusic);
+
+	this.game.state.start("Counting0", true, false, this.BGmusic);
 };

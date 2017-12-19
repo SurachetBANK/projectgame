@@ -1,0 +1,109 @@
+{
+  "frames": {
+    "buree_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 29
+      }
+    },
+    "buree_4": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 29
+      }
+    },
+    "buree_3": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 29
+      }
+    },
+    "buree_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 8,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 29
+      }
+    },
+    "buree_2": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 8,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 29
+      },
+      "sourceSize": {
+        "w": 8,
+        "h": 29
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "buree.png"
+  }
+}

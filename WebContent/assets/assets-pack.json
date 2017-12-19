@@ -123,6 +123,88 @@
       "key": "Drum",
       "urls": ["assets/audio/Drum Roll - Gaming Sound Effect (HD).mp3"],
       "autoDecode": true
+    },
+    {
+      "type": "atlas",
+      "key": "Cigar",
+      "textureURL": "assets/atlas/Cigar.png",
+      "atlasURL": "assets/atlas/Cigar.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "alcohol",
+      "textureURL": "assets/atlas/alcohol.png",
+      "atlasURL": "assets/atlas/alcohol.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "beer",
+      "textureURL": "assets/atlas/beer.png",
+      "atlasURL": "assets/atlas/beer.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "buree",
+      "textureURL": "assets/atlas/buree.png",
+      "atlasURL": "assets/atlas/buree.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "atlas",
+      "key": "cigarOF",
+      "textureURL": "assets/atlas/cigarOF.png",
+      "atlasURL": "assets/atlas/cigarOF.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "bitmapFont",
+      "key": "ZoodHarit8Bit",
+      "textureURL": "assets/font/font.png",
+      "xSpacing": 0,
+      "ySpacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "Menu",
+      "url": "assets/tilemap/Menu.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "button1",
+      "url": "assets/button/button1.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "button2",
+      "url": "assets/button/button2.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "button3",
+      "url": "assets/button/button3.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
     }
   ],
   "start": [{
@@ -235,7 +317,7 @@
     }
   ],
   "meta": {
-    "generated": "1513441763059",
+    "generated": "1513700815517",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

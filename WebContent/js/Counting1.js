@@ -1,18 +1,17 @@
 /**
  * Counting state.
  */
-function Counting() {
+function Counting1() {
 	Phaser.State.call(this);
 }
 
 /** @type Phaser.State */
 var proto = Object.create(Phaser.State);
-Counting.prototype = proto;
+Counting1.prototype = proto;
 
-Counting.prototype.create = function() {
-	
+Counting1.prototype.create = function() {
 
-	this.ConDrum = this.add.sound("Drum", 1, false);
+	this.ConDrum = this.add.sound("Drum", 2, false);
 	this.ConDrum.play();
 
 	this.bg = this.game.add.sprite(0, 0, "BG");
@@ -63,14 +62,26 @@ function fadePicture() {
 		x : 320,
 		y : 150
 	}, 1000, "Quad.easeInOut", true);
+	this.Ugrade = this.add.text(75, 500, "Your Grade.", {
+		font : '35px ZoodHarit8Bit',
+		fill : 'white'
+	});
+	this.Ugrade.stroke = "black";
+	this.Ugrade.strokeThickness = 5;
 
-	this.Ugrade = this.game.add.sprite(75, 500, 'Counting', 9);
-	this.Ugrade.scale.set(3);
 
 	this.game.add.tween(this.Ugrade).to({
 		x : 75,
 		y : 175
 	}, 1500, "Quad.easeInOut", true);
+
+	/*this.Ugrade = this.game.add.sprite(75, 500, 'Counting', 9);
+	this.Ugrade.scale.set(3);
+
+	this.game.add.tween(this.Ugrade).to({
+		x : 75,
+		y : 175
+	}, 1500, "Quad.easeInOut", true);*/
 
 	this.game.time.events.add(Phaser.Timer.SECOND * 4, NextLevel, this);
 }
@@ -111,7 +122,7 @@ function gframes(key, n) {
 	return f;
 }
 
-Counting.prototype.addPlayer = function(x, y) {
+Counting1.prototype.addPlayer = function(x, y) {
 	J = this.add.sprite(x, y, "JimmyMotion");
 	J.scale.set(4);
 	J.animations.add("idle", gframes("idle", 1), 5, true);
@@ -122,7 +133,7 @@ Counting.prototype.addPlayer = function(x, y) {
 	return J;
 };
 
-Counting.prototype.addCount = function(x, y) {
+Counting1.prototype.addCount = function(x, y) {
 	C = this.add.sprite(x, y, "Counting");
 	C.scale.set(10);
 	C.animations.add("run", gframes("Counting", 8), 40, true);

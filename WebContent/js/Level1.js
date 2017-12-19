@@ -11,7 +11,6 @@ Level1.prototype = proto;
 
 Level1.prototype.create = function() {
 
-	
 	this.Jump = this.add.sound("Jump", 2, false);
 	this.Hit = this.add.sound("Hit", 1.5, false);
 	this.Hit.allowMultiple = true;
@@ -25,7 +24,7 @@ Level1.prototype.create = function() {
 	// this.bg.fixedToCamera = true;
 	this.bg.width = 1920;
 	this.bg.height = 1080;
-  
+
 	this.map = this.game.add.tilemap("level1");
 	this.map.addTilesetImage('street');
 	this.maplayer = this.map.createLayer("Tile Layer 1");
@@ -62,22 +61,22 @@ Level1.prototype.create = function() {
 			var Enemy = this.addEGame(obj.x, obj.y);
 			this.enemies.add(Enemy);
 		} else if (obj.type == "enemy1") {
-			var Enemy1 = this.addEWY(obj.x, obj.y);
+			var Enemy1 = this.addCigar(obj.x, obj.y);
 			this.enemies.add(Enemy1);
 		} else if (obj.type == "enemy2") {
 			var Enemy2 = this.addEWeed(obj.x, obj.y);
 			this.enemies.add(Enemy2);
 		} else if (obj.type == "enemy3") {
-			var Enemy3 = this.addEWeed(obj.x, obj.y);
+			var Enemy3 = this.addCigarOF(obj.x, obj.y);
 			this.enemies.add(Enemy3);
 		} else if (obj.type == "enemy4") {
 			var Enemy4 = this.addEWY(obj.x, obj.y);
 			this.enemies.add(Enemy4);
 		} else if (obj.type == "enemy5") {
-			var Enemy5 = this.addEGame(obj.x, obj.y);
+			var Enemy5 = this.addBuree(obj.x, obj.y);
 			this.enemies.add(Enemy5);
 		} else if (obj.type == "enemy6") {
-			var Enemy6 = this.addEWeed(obj.x, obj.y);
+			var Enemy6 = this.addBeer(obj.x, obj.y);
 			this.enemies.add(Enemy6);
 		} else if (obj.type == "goal") {
 			var goal = this.addGoal(obj.x, obj.y);
@@ -85,13 +84,11 @@ Level1.prototype.create = function() {
 		}
 	}
 	this.game.score = 0;
-	this.scoreText = this.add.text(this.game.width - 610, 20, "Score : "
-			+ this.game.score, {
-		fill : 'white'
-	}, this.ui);
+	this.scoreText = this.add.text(this.game.width - 610, 20, 
+			"Score : "+ this.game.score, {font:'65px ZoodHarit8Bit',
+		fill : 'white'}, this.ui);
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
-
 
 };
 
@@ -103,7 +100,6 @@ function gframes(key, n) {
 	}
 	return f;
 }
-
 
 Level1.prototype.addGoal = function(x, y) {
 	J = this.add.sprite(x, y, "NextYear");
@@ -172,6 +168,58 @@ Level1.prototype.addEWeed = function(x, y) {
 	return G;
 };
 
+Level1.prototype.addCigar = function(x, y) {
+	G = this.add.sprite(x, y, "Cigar");
+	G.animations.add("idle", gframes("cigarette", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
+Level1.prototype.addCigarOF = function(x, y) {
+	G = this.add.sprite(x, y, "cigarOF");
+	G.animations.add("idle", gframes("cigaretteONF", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
+Level1.prototype.addBuree = function(x, y) {
+	G = this.add.sprite(x, y, "buree");
+	G.animations.add("idle", gframes("buree", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
+Level1.prototype.addBeer = function(x, y) {
+	G = this.add.sprite(x, y, "beer");
+	G.animations.add("idle", gframes("beer", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
 Level1.prototype.addPoint = function(x, y) {
 
 	P = this.add.sprite(x, y, "Point");
@@ -200,7 +248,7 @@ Level1.prototype.update = function() {
 			this.onCollidePlayerConcat, null, this);
 
 	// //////////
-	
+
 	if (this.cursor.left.isDown) {
 		this.player.scale.x = -1;
 		this.player.body.velocity.x = 250 * -1;
@@ -273,5 +321,5 @@ Level1.prototype.onCollidePlayerEnemy = function(player, enemies) {
 
 Level1.prototype.onCollidePlayerConcat = function(player, concats) {
 	// this.BGmusic.stop();
-	this.game.state.start("Counting", true, false, this.player);
+	this.game.state.start("Counting1", false, false, this.player);
 };

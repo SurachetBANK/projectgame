@@ -1,0 +1,49 @@
+{
+  "frames": {
+    "cigaretteONF_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 27
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 27
+      },
+      "sourceSize": {
+        "w": 12,
+        "h": 27
+      }
+    },
+    "cigaretteONF_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 27
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 27
+      },
+      "sourceSize": {
+        "w": 12,
+        "h": 27
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "cigarOF.png"
+  }
+}

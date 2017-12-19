@@ -9,9 +9,10 @@ window.onload = function() {
 	game.state.add("Boot", Boot);
 	game.state.add("Menu", Menu);
 	game.state.add("Preload", Preload);
-	game.state.add("Counting", Counting);
 	game.state.add("Level0", Level0);
+	game.state.add("Counting0", Counting0);
 	game.state.add("Level1", Level1);
+	game.state.add("Counting1", Counting1);
 	game.state.add("Level2", Level2);
 	game.state.add("Story", Story);
 	game.state.add("Howtoplay", Howtoplay);
