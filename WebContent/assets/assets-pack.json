@@ -211,6 +211,64 @@
       "key": "level2",
       "url": "assets/tilemap/level2.json",
       "format": "TILED_JSON"
+    },
+    {
+      "type": "spritesheet",
+      "key": "Congut",
+      "url": "assets/images/Congut.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "audio",
+      "key": "wow",
+      "urls": ["assets/audio/Anime - wow.mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "sad",
+      "urls": ["assets/audio/Sad Violin - MLG Sound Effects (HD).mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "Heavenly",
+      "urls": ["assets/audio/Heavenly Music - Gaming Sound Effect (HD).mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "Hey",
+      "urls": ["assets/audio/Hey Thats Pretty Good - iDubbbz Sound Effect (HD).mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "ILLU",
+      "urls": ["assets/audio/ILLUMINATI CONFIRMED - MLG Sound Effects (HD).mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "Kids",
+      "urls": ["assets/audio/Kids Cheering - Gaming Sound Effect (HD).mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "OH",
+      "urls": ["assets/audio/OH OH MY GOD (Trickshot Reaction) - MLG Sound Effects (HD).mp3"],
+      "autoDecode": true
+    },
+    {
+      "type": "audio",
+      "key": "BABY",
+      "urls": ["assets/audio/OH BABY A TRIPLE - MLG Sound Effects (HD).mp3"],
+      "autoDecode": true
     }
   ],
   "start": [{
@@ -219,12 +277,20 @@
     "url": "assets/images/tap-to-start.png",
     "overwrite": false
   }],
-  "preload": [{
-    "type": "image",
-    "key": "loading",
-    "url": "assets/images/loading.png",
-    "overwrite": false
-  }],
+  "preload": [
+    {
+      "type": "image",
+      "key": "loading",
+      "url": "assets/atlas/JimmyMotion.png",
+      "overwrite": false
+    },
+    {
+      "type": "audio",
+      "key": "run",
+      "urls": ["assets/audio/Dutty Moonshine (Takin it Back) - Gaming Background Music (HD).mp3"],
+      "autoDecode": true
+    }
+  ],
   "End": [
     {
       "type": "image",
@@ -323,7 +389,7 @@
     }
   ],
   "meta": {
-    "generated": "1513760487793",
+    "generated": "1513773793789",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

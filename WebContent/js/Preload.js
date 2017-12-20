@@ -10,8 +10,6 @@ var proto = Object.create(Phaser.State);
 Preload.prototype = proto;
 
 Preload.prototype.preload = function() {
-
-	
 	// This sets the preloadBar sprite as a loader sprite.
 	// What that does is automatically crop the sprite from 0 to full-width
 	// as the files below are loaded in.
@@ -23,6 +21,11 @@ Preload.prototype.preload = function() {
 	// Here we load the rest of the assets our game needs.
 	this.load.pack("start", "assets/assets-pack.json");
 	this.load.pack("level", "assets/assets-pack.json");
+
+	this.BGmusic = this.add.sound("run", .4, true);
+
+	this.BGmusic.play();
+	
 };
 
 Preload.prototype.create = function() {

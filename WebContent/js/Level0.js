@@ -127,6 +127,15 @@ Level0.prototype.create = function() {
 	}, this.ui);
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
+	
+	this.LetDo = this.add.text(150, 900, "How to Play? Let's do it!", {
+		font : '65px ZoodHarit8Bit',
+		fill : 'white'
+	});
+	this.LetDo.stroke = "black";
+	this.LetDo.strokeThickness = 5;
+	
+
 
 	if (this.player.x == 300) {
 		this.game.score = this.game.score + 30;
