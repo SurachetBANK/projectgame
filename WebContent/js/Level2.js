@@ -25,7 +25,7 @@ Level2.prototype.create = function() {
 	this.bg.width = 1920;
 	this.bg.height = 1080;
 
-	this.map = this.game.add.tilemap("mymap1");
+	this.map = this.game.add.tilemap("level2");
 	this.map.addTilesetImage('street');
 	this.maplayer = this.map.createLayer("Tile Layer 1");
 	this.Amaplayer = this.map.createLayer("Tile Layer 2");
@@ -61,33 +61,32 @@ Level2.prototype.create = function() {
 			var Enemy = this.addEGame(obj.x, obj.y);
 			this.enemies.add(Enemy);
 		} else if (obj.type == "enemy1") {
-			var Enemy1 = this.addEWY(obj.x, obj.y);
+			var Enemy1 = this.addCigar(obj.x, obj.y);
 			this.enemies.add(Enemy1);
 		} else if (obj.type == "enemy2") {
 			var Enemy2 = this.addEWeed(obj.x, obj.y);
 			this.enemies.add(Enemy2);
 		} else if (obj.type == "enemy3") {
-			var Enemy3 = this.addEWeed(obj.x, obj.y);
+			var Enemy3 = this.addCigarOF(obj.x, obj.y);
 			this.enemies.add(Enemy3);
 		} else if (obj.type == "enemy4") {
 			var Enemy4 = this.addEWY(obj.x, obj.y);
 			this.enemies.add(Enemy4);
 		} else if (obj.type == "enemy5") {
-			var Enemy5 = this.addEGame(obj.x, obj.y);
+			var Enemy5 = this.addBuree(obj.x, obj.y);
 			this.enemies.add(Enemy5);
 		} else if (obj.type == "enemy6") {
-			var Enemy6 = this.addEWeed(obj.x, obj.y);
+			var Enemy6 = this.addBeer(obj.x, obj.y);
 			this.enemies.add(Enemy6);
 		} else if (obj.type == "goal") {
 			var goal = this.addGoal(obj.x, obj.y);
 			this.concat.add(goal);
 		}
 	}
-	//this.game.score = 0;
-	this.scoreText = this.add.text(this.game.width - 610, 20, "คะแนน : "
-			+ this.game.score, {
-		fill : 'white'
-	}, this.ui);
+	this.game.score = 0;
+	this.scoreText = this.add.text(this.game.width - 610, 20, 
+			"Score : "+ this.game.score, {font:'65px ZoodHarit8Bit',
+		fill : 'white'}, this.ui);
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
 
@@ -169,15 +168,66 @@ Level2.prototype.addEWeed = function(x, y) {
 	return G;
 };
 
+Level2.prototype.addCigar = function(x, y) {
+	G = this.add.sprite(x, y, "Cigar");
+	G.animations.add("idle", gframes("cigarette", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
+Level2.prototype.addCigarOF = function(x, y) {
+	G = this.add.sprite(x, y, "cigarOF");
+	G.animations.add("idle", gframes("cigaretteONF", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
+Level2.prototype.addBuree = function(x, y) {
+	G = this.add.sprite(x, y, "buree");
+	G.animations.add("idle", gframes("buree", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
+Level2.prototype.addBeer = function(x, y) {
+	G = this.add.sprite(x, y, "beer");
+	G.animations.add("idle", gframes("beer", 1), 3, true);
+	G.anchor.set(0.5, 0.5);
+	G.smoothed = false;
+	this.game.physics.arcade.enable(G);
+	this.game.physics.enable(G);
+	this.game.physics.arcade.gravity.y = 1000;
+	G.play("idle");
+	G.body.collideWorldBounds = true;
+	return G;
+};
+
 Level2.prototype.addPoint = function(x, y) {
 
 	P = this.add.sprite(x, y, "Point");
 	// this.game.physics.arcade.enable(P);
-	P.animations.add("idle", gframes("point", 0), 2, true);
+	P.animations.add("idle", gframes("point", 7), 2, true);
 	P.anchor.set(0.5, 1);
 	P.smoothed = false;
 	this.game.physics.enable(P);
-	P.play("idle");
 	P.body.collideWorldBounds = true;
 	return P;
 
@@ -188,6 +238,7 @@ Level2.prototype.update = function() {
 	this.game.physics.arcade.collide(this.Gpoint, this.maplayer);
 	this.game.physics.arcade.collide(this.enemies, this.maplayer);
 	this.game.physics.arcade.collide(this.concat, this.maplayer);
+	this.game.physics.arcade.collide(this.enemies, this.enemies);
 
 	this.physics.arcade.collide(this.Gpoint, this.player,
 			this.onCollidePlayerPoint, null, this);
@@ -197,14 +248,15 @@ Level2.prototype.update = function() {
 			this.onCollidePlayerConcat, null, this);
 
 	// //////////
+
 	if (this.cursor.left.isDown) {
 		this.player.scale.x = -1;
 		this.player.body.velocity.x = 250 * -1;
 		this.player.play("run");
 		if (this.cursor.up.isDown) {
+			this.player.play("jump");
 			if (this.player.body.velocity.y == 0) {
 				this.player.body.velocity.y = -350;
-				this.player.play("jump");
 				this.Jump.play();
 			}
 
@@ -214,9 +266,10 @@ Level2.prototype.update = function() {
 		this.player.body.velocity.x = 250;
 		this.player.play("run");
 		if (this.cursor.up.isDown) {
+			this.player.play("jump");
 			if (this.player.body.velocity.y == 0) {
 				this.player.body.velocity.y = -350;
-				this.player.play("jump");
+
 				this.Jump.play();
 			}
 
@@ -252,7 +305,7 @@ Level2.prototype.update = function() {
 Level2.prototype.onCollidePlayerPoint = function(player, Gpoint) {
 	Gpoint.kill();
 	this.game.score = this.game.score + 5;
-	this.scoreText.text = "คะแนน : " + this.game.score;
+	this.scoreText.text = "Score : " + this.game.score;
 	this.point.play();
 
 };
@@ -263,10 +316,10 @@ Level2.prototype.onCollidePlayerEnemy = function(player, enemies) {
 	this.Hit.play();
 	player.body.velocity.y = -300;
 	this.game.score = this.game.score - 1;
-	this.scoreText.text = "คะแนน : " + this.game.score;
+	this.scoreText.text = "Score : " + this.game.score;
 };
 
 Level2.prototype.onCollidePlayerConcat = function(player, concats) {
 	// this.BGmusic.stop();
-	this.game.state.start("Level", true, false, this.player);
+	this.game.state.start("Counting1", false, false, this.player);
 };

@@ -17,7 +17,9 @@ Menu.prototype.preload = function() {
 
 Menu.prototype.create = function() {
 	// this.bg.fixedToCamera = true;
+	this.BGmusic = this.add.sound("run", .4, true);
 
+	this.BGmusic.play();
 	// ////////////////////////////////////
 	this.bg1 = this.game.add.sprite(0, 0, "BG");
 	// this.bg.fixedToCamera = true;

@@ -11,8 +11,7 @@ Level0.prototype = proto;
 
 Level0.prototype.create = function() {
 
-	this.BGmusic = this.add.sound("run", .4, true);
-	this.BGmusic.play();
+	
 	this.Jump = this.add.sound("Jump", 2, false);
 	this.Hit = this.add.sound("Hit", 1.5, false);
 	this.Hit.allowMultiple = true;

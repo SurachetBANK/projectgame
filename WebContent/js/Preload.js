@@ -10,6 +10,8 @@ var proto = Object.create(Phaser.State);
 Preload.prototype = proto;
 
 Preload.prototype.preload = function() {
+
+	
 	// This sets the preloadBar sprite as a loader sprite.
 	// What that does is automatically crop the sprite from 0 to full-width
 	// as the files below are loaded in.

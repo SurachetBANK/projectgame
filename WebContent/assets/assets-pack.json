@@ -205,6 +205,12 @@
       "frameMax": -1,
       "margin": 0,
       "spacing": 0
+    },
+    {
+      "type": "tilemap",
+      "key": "level2",
+      "url": "assets/tilemap/level2.json",
+      "format": "TILED_JSON"
     }
   ],
   "start": [{
@@ -317,7 +323,7 @@
     }
   ],
   "meta": {
-    "generated": "1513700815517",
+    "generated": "1513760487793",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",
