@@ -69,17 +69,17 @@ Counting0.prototype.create = function() {
 	}, this.ui);
 	this.butTxt2.stroke = "black";
 	this.butTxt2.strokeThickness = 5;
-
-}
-
-function ConS() {
-
 	this.wow = this.add.sound("wow", 2, false);
 	this.kid = this.add.sound("Kids", 2, false);
 	this.ho = this.add.sound("OH", 2, false);
 	this.baby = this.add.sound("BABY", 2, false);
 	this.hey = this.add.sound("Hey", 2, false);
 	this.sad = this.add.sound("sad", 2, false);
+
+}
+
+function ConS() {
+
 	if (this.game.score > 100) {
 		this.wow.play();
 	} else if (this.game.score >= 96 && this.game.score <= 100) {

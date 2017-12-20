@@ -11,7 +11,6 @@ Level0.prototype = proto;
 
 Level0.prototype.create = function() {
 
-	
 	this.Jump = this.add.sound("Jump", 2, false);
 	this.Hit = this.add.sound("Hit", 1.5, false);
 	this.Hit.allowMultiple = true;
@@ -65,20 +64,27 @@ Level0.prototype.create = function() {
 	});
 	this.cant.stroke = "black";
 	this.cant.strokeThickness = 5;
-	
+
 	this.should = this.add.text(1200, 980, "So, you should jump over.", {
 		font : '35px ZoodHarit8Bit',
 		fill : 'white'
 	});
 	this.should.stroke = "black";
 	this.should.strokeThickness = 5;
-	
+
 	this.GOTO = this.add.text(1740, 900, "Go to Next State !!", {
 		font : '40px ZoodHarit8Bit',
 		fill : 'white'
 	});
 	this.GOTO.stroke = "black";
 	this.GOTO.strokeThickness = 5;
+
+	this.LetDo = this.add.text(150, 900, "How to Play? Let's do it!", {
+		font : '65px ZoodHarit8Bit',
+		fill : 'white'
+	});
+	this.LetDo.stroke = "black";
+	this.LetDo.strokeThickness = 5;
 	// ////////////////////////////////////
 	for (x in this.map.objects.object) {
 		var obj = this.map.objects.object[x];
@@ -127,15 +133,6 @@ Level0.prototype.create = function() {
 	}, this.ui);
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
-	
-	this.LetDo = this.add.text(150, 900, "How to Play? Let's do it!", {
-		font : '65px ZoodHarit8Bit',
-		fill : 'white'
-	});
-	this.LetDo.stroke = "black";
-	this.LetDo.strokeThickness = 5;
-	
-
 
 	if (this.player.x == 300) {
 		this.game.score = this.game.score + 30;

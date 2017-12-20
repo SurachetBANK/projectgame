@@ -321,5 +321,5 @@ Level2.prototype.onCollidePlayerEnemy = function(player, enemies) {
 
 Level2.prototype.onCollidePlayerConcat = function(player, concats) {
 	// this.BGmusic.stop();
-	this.game.state.start("Counting1", false, false, this.player);
+	this.game.state.start("Counting2", false, false, this.player);
 };

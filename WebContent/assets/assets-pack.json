@@ -1,12 +1,6 @@
 {
   "level": [
     {
-      "type": "image",
-      "key": "mono",
-      "url": "assets/images/mono.png",
-      "overwrite": false
-    },
-    {
       "type": "spritesheet",
       "key": "street",
       "url": "assets/tilemap/street.png",
@@ -269,14 +263,56 @@
       "key": "BABY",
       "urls": ["assets/audio/OH BABY A TRIPLE - MLG Sound Effects (HD).mp3"],
       "autoDecode": true
+    },
+    {
+      "type": "spritesheet",
+      "key": "Credit",
+      "url": "assets/images/Credit.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "StoBG",
+      "url": "assets/images/Univ.jpg",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "hall",
+      "url": "assets/images/hall.jpg",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "spritesheet",
+      "key": "vice",
+      "url": "assets/images/vice.jpg",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
+    },
+    {
+      "type": "atlas",
+      "key": "JimmyKrui",
+      "textureURL": "assets/atlas/JimmyKrui.png",
+      "atlasURL": "assets/atlas/JimmyKrui.json",
+      "format": "TEXTURE_ATLAS_JSON_HASH"
     }
   ],
-  "start": [{
-    "type": "image",
-    "key": "tap-to-start",
-    "url": "assets/images/tap-to-start.png",
-    "overwrite": false
-  }],
+  "start": [],
   "preload": [
     {
       "type": "image",
@@ -291,105 +327,17 @@
       "autoDecode": true
     }
   ],
-  "End": [
-    {
-      "type": "image",
-      "key": "23574301_1568238663244156_914312409_n",
-      "url": "assets/images/23574301_1568238663244156_914312409_n.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "V",
-      "url": "assets/images/V.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "boniatillo",
-      "url": "assets/images/boniatillo.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "end",
-      "url": "assets/images/end.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "s",
-      "url": "assets/images/s.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "skip",
-      "url": "assets/images/skip.gif",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "sp",
-      "url": "assets/images/sp.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "start1",
-      "url": "assets/images/start.png",
-      "overwrite": false
-    },
-    {
-      "type": "video",
-      "key": "T",
-      "urls": ["assets/images/T.mp4"],
-      "asBlob": false
-    },
-    {
-      "type": "video",
-      "key": "wormhole",
-      "urls": ["assets/images/wormhole.mp4"],
-      "asBlob": false
-    }
-  ],
-  "Howtoplay": [
-    {
-      "type": "image",
-      "key": "image",
-      "url": "assets/images/s.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "image1",
-      "url": "assets/atlas/EGame.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "sp",
-      "url": "assets/images/sp.png",
-      "overwrite": false
-    }
-  ],
+  "End": [{
+    "type": "image",
+    "key": "23574301_1568238663244156_914312409_n",
+    "url": "assets/images/23574301_1568238663244156_914312409_n.png",
+    "overwrite": false
+  }],
+  "Howtoplay": [],
   "Level2": [],
-  "Story": [
-    {
-      "type": "image",
-      "key": "start1",
-      "url": "assets/images/start.png",
-      "overwrite": false
-    },
-    {
-      "type": "image",
-      "key": "image5",
-      "url": "assets/images/s.png",
-      "overwrite": false
-    }
-  ],
+  "Story": [],
   "meta": {
-    "generated": "1513773793789",
+    "generated": "1513795835744",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

@@ -62,6 +62,8 @@ Menu.prototype.create = function() {
 
 	this.button3 = this.game.add.sprite(140, 295, "button1");
 	this.button3.scale.set(1.25);
+	this.button3.inputEnabled = true;
+	this.button3.events.onInputDown.add(this.GotoCredited, this);
 	this.butTxt3 = this.add.text(183, 294, "Credited", {
 		font : '35px ZoodHarit8Bit',
 		fill : 'white'
@@ -92,13 +94,7 @@ Menu.prototype.create = function() {
 	this.picture.scale.set(7);
 	this.picture.anchor.setTo(0.5, 0.5);
 	this.picture.scale.x = -7;
-	this.picture.smoothed = false;
-	
-	
-	
-	
-	
-	
+	this.picture.smoothed = false;	
 };
 
 Menu.prototype.Gotoplay = function() {
@@ -107,6 +103,10 @@ Menu.prototype.Gotoplay = function() {
 
 Menu.prototype.Gotostory = function() {
 	this.game.state.start("Story");
+};
+
+Menu.prototype.GotoCredited = function() {
+	this.game.state.start("Credited");
 };
 
 Menu.prototype.addEGame = function(x, y) {

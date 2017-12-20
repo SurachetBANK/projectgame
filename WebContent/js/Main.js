@@ -14,8 +14,9 @@ window.onload = function() {
 	game.state.add("Level1", Level1);
 	game.state.add("Counting1", Counting1);
 	game.state.add("Level2", Level2);
+	game.state.add("Counting2", Counting2);
 	game.state.add("Story", Story);
-	game.state.add("Howtoplay", Howtoplay);
+	game.state.add("Credited", Credited);
 	game.state.add("End", End);
 	
 	// Now start the Boot state.

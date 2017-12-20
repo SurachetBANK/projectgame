@@ -1,0 +1,129 @@
+{
+  "frames": {
+    "JimKruiIdle_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 90,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "JimKruiIdle_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 120,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "JimKrui_0": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "JimKrui_2": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "JimKrui_1": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 30,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    },
+    "JimKrui_3": {
+      "trimmed": false,
+      "rotated": false,
+      "frame": {
+        "x": 60,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 30,
+        "h": 60
+      },
+      "sourceSize": {
+        "w": 30,
+        "h": 60
+      }
+    }
+  },
+  "meta": {
+    "app": "Phaser Editor",
+    "version": "1",
+    "image": "JimmyKrui.png"
+  }
+}
