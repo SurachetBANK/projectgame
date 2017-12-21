@@ -310,6 +310,16 @@
       "textureURL": "assets/atlas/JimmyKrui.png",
       "atlasURL": "assets/atlas/JimmyKrui.json",
       "format": "TEXTURE_ATLAS_JSON_HASH"
+    },
+    {
+      "type": "spritesheet",
+      "key": "arrow",
+      "url": "assets/images/Button/arrow.png",
+      "frameWidth": 0,
+      "frameHeight": 0,
+      "frameMax": -1,
+      "margin": 0,
+      "spacing": 0
     }
   ],
   "start": [],
@@ -337,7 +347,7 @@
   "Level2": [],
   "Story": [],
   "meta": {
-    "generated": "1513795835744",
+    "generated": "1513844064062",
     "app": "Phaser Editor",
     "url": "http://phasereditor.boniatillo.com",
     "version": "1.0",

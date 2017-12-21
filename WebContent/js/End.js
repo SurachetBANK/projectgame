@@ -31,14 +31,14 @@ End.prototype.create = function() {
 		x : 320,
 		y : 320
 	}, 2000, "Quad.easeInOut", true);
-	this.Cong = this.add.text(185, -150, "Conguration", {
+	this.Cong = this.add.text(150, -150, "Congratulation", {
 		font : '100px ZoodHarit8Bit',
 		fill : 'white'
 	}, this.ui);
 	this.Cong.stroke = "black";
 	this.Cong.strokeThickness = 10;
 	this.game.add.tween(this.Cong).to({
-		x : 185,
+		x : 150,
 		y : 25
 	}, 2000, "Quad.easeInOut", true);
 

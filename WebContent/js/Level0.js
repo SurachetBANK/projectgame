@@ -40,8 +40,6 @@ Level0.prototype.create = function() {
 	this.enemies = this.add.group();
 	this.Gpoint = this.add.group();
 	this.concat = this.add.group();
-	this.ui = this.add.group();
-	this.ui.fixedToCamera = true;
 	// /////////////////////////////////////////////
 	this.howmoveL = this.addHowto(45, 1020);
 	this.howmoveL.play("left");
@@ -125,6 +123,9 @@ Level0.prototype.create = function() {
 			this.concat.add(goal);
 		}
 	}
+
+	this.ui = this.add.group();
+	this.ui.fixedToCamera = true;
 	this.game.score = 0;
 	this.scoreText = this.add.text(this.game.width - 610, 20, "Score : "
 			+ this.game.score, {
@@ -134,10 +135,55 @@ Level0.prototype.create = function() {
 	this.scoreText.stroke = "black";
 	this.scoreText.strokeThickness = 5;
 
-	if (this.player.x == 300) {
-		this.game.score = this.game.score + 30;
-		this.scoreText.text = "Score : " + this.game.score;
-	}
+	/*
+	 * if (this.player.x == 300) { this.game.score = this.game.score + 30;
+	 * this.scoreText.text = "Score : " + this.game.score; }
+	 */
+
+	this.arrowR = this.add.sprite(this.game.width - 530, 250, "arrow", this.ui);
+	this.ui.add(this.arrowR);
+	this.arrowR.scale.set(0.2);
+	this.arrowR.inputEnabled = true;
+	this.arrowR.events.onInputDown.add(this.GoRD, this);
+	this.arrowR.events.onInputUp.add(this.GoRU, this);
+
+	this.arrowL = this.add.sprite(this.game.width - 530, 250, "arrow", this.ui);
+	this.ui.add(this.arrowL);
+	this.arrowL.scale.set(0.2);
+	this.arrowL.scale.x = -0.2;
+	this.arrowL.inputEnabled = true;
+	this.arrowL.events.onInputDown.add(this.GoLD, this);
+	this.arrowL.events.onInputUp.add(this.GoLU, this);
+
+	this.arrowJ = this.add.sprite(this.game.width - 100, 315, "arrow", this.ui);
+	this.ui.add(this.arrowJ);
+	this.arrowJ.scale.set(0.2);
+	this.arrowJ.angle = -90;
+	this.arrowJ.inputEnabled = true;
+	this.arrowJ.events.onInputDown.add(this.GoJD, this);
+	this.arrowJ.events.onInputUp.add(this.GoJU, this);
+
+};
+
+Level0.prototype.GoRD = function() {
+	this.cursor.right.isDown = true;
+};
+Level0.prototype.GoRU = function() {
+	this.cursor.right.isDown = false;
+};
+
+Level0.prototype.GoLD = function() {
+	this.cursor.left.isDown = true;
+};
+Level0.prototype.GoLU = function() {
+	this.cursor.left.isDown = false;
+};
+
+Level0.prototype.GoJD = function() {
+	this.cursor.up.isDown = true;
+};
+Level0.prototype.GoJU = function() {
+	this.cursor.up.isDown = false;
 };
 
 function gframes(key, n) {
